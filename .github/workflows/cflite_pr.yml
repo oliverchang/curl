@@ -25,7 +25,7 @@ jobs:
       uses: google/clusterfuzzlite/actions/run_fuzzers@v1
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        fuzz-seconds: 600
+        fuzz-seconds: 700
         mode: 'code-change'
         sanitizer: ${{ matrix.sanitizer }}
         storage-repo: https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/oliverchang/curl-storage.git
